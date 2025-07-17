@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Martian | 11ty SSG</title>
+        <meta name="author" content="Martian">
+        <meta name="description" content="">
+        <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/f/f5/3D_Mars.png?20150725174645">
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/f/f5/3D_Mars.png?20150725174645" type="image/x-icon">
+    </head>
+    <body>
+        <h2>What is 11ty?</h2>
+<h3>11ty in 100 seconds</h3>
+<p><code>11ty</code> is a Static Site Generator that takes normal and easy to read <em>markdown</em> and turns it into browser renderable <em>html</em></p>
+<p>No server and cant be put up on <a href="https://pages.github.com/">github pages</a> a static <code>free</code> site hoster</p>
+<h3>How does one use 11ty?</h3>
+<p>In truth its quite simple.</p>
+<pre><code>echo &quot;# Hello, World&quot; &gt;&gt; index.md &amp;&amp; elventy --serve
+</code></pre>
+<p>Just standard github markdown.</p>
+<p>A blog for me may look like this:</p>
+<pre><code>---
+title: Blog Post name!
+tags: blog
+favicon: https://upload.wikimedia.org/wikipedia/commons/f/f5/3D_Mars.png?20150725174645
+layout: base.njk
+author: Martian
+date: 2025-07-18
+---
+</code></pre>
+<p>this is the header it tells 11ty info about the file.
+It spits out a valid webite,</p>
+<p>but hey! whats this:</p>
+<pre><code>---
+layout: base.njk
+---
+</code></pre>
+<p>that is by base template that i use for this site. It tells the site how to render. it gives it a place to look at and go &quot;huh, thats what that needs to look like&quot;</p>
+<p>Sure there are other SSG's similar too 11ty but none that beats its speed and ease of use. Many will tell you that &quot;you have to write js!&quot; no. no you dont.</p>
+
+        <hr><footer>
+            DOP: Fri Jul 18 2025 12:00:00 GMT+1200 (New Zealand Standard Time)
+            <p>
+            <a href="/">HOME</a>
+            <a href="/welcome/">WELCOME</a>
+            <a href="/why/">WHY</a>
+            </p>
+        </footer>
+    </body>
+</html>
