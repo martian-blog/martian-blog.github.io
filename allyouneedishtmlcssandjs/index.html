@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Martian | All you need is HTML, CSS &amp; JS</title>
+        <meta name="author" content="Martian">
+        <meta name="description" content="">
+        <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/f/f5/3D_Mars.png?20150725174645">
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/f/f5/3D_Mars.png?20150725174645" type="image/x-icon">
+    </head>
+    <body>
+        <h1>All you need is HTML, CSS &amp; JS!</h1>
+<p>And that is me being fully honest.
+Sure i use fancy things like 11ty for this website but thats because im a lazy prick.</p>
+<p>The beauty of <code>HTML CSS, &amp; JS</code> is that you know how it works. Sure people will say stupid things like:</p>
+<p>&quot;Oh if your gonna make a website in html the you should just code in ASM!&quot;</p>
+<p>HTML is not that hard you wuss! Here:</p>
+<pre><code>&lt;html&gt;
+    &lt;body&gt;
+        &lt;p&gt;Hello, World&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Heres the ASM equal:</p>
+<pre><code>global _start
+
+section .data
+	
+	align 2
+	hello: db 'Hello world!', 0xa
+	helloLen: equ $-hello
+
+section .bss
+
+section .text
+
+	_start:
+
+	mov eax, 0x4
+	mov ebx, 0x1
+	mov ecx, hello
+	mov edx, helloLen
+	int 0x80
+
+	mov eax, 0x1
+	xor ebx, ebx
+	int 0x80
+</code></pre>
+<p>Alot more complex huh?</p>
+<p>Whats hard is dealing w/ bullshit webdev frameworks that take a life to learn and also endoctrinate you into a cult at the same time.</p>
+
+        <hr><footer>
+            DOP: Fri Jul 18 2025 12:00:00 GMT+1200 (New Zealand Standard Time)
+            <p>
+            <a href="/">HOME</a>
+            <a href="/welcome/">WELCOME</a>
+            <a href="/why/">WHY</a>
+            </p>
+        </footer>
+    </body>
+</html>
